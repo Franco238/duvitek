@@ -1,0 +1,725 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 124, 177);
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border: 3px solid black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.infoInicio {
+    margin: 20px;
+}
+
+.infoInicio h2 {
+    margin: 15px;
+}
+
+.infoInicio p {
+    margin: 5px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.tituloPrincipal {
+    margin-top: 100px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+    background-color: rgb(32, 124, 177);
+    width: 100px;
+    right: 10px;
+    font-size: 16px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.partePrincipal {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoDuvi {
+    margin: 20px;
+    width: 30%;
+    padding-bottom: 10px;
+}
+
+.parrafoDer {
+    height: 40%;
+    width: 40%;
+    padding: 10px 50px;
+    border-left: solid black;
+    font-size: 120%;
+}
+
+.fotoFondo {
+    background-image: url(https://i0.wp.com/herramientasgratis.com/wp-content/uploads/2018/10/Capture-1.png?resize=1210%2C642);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.foto {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    padding-bottom: 30px;
+}
+
+
+.formulario {
+    width: 400px;
+    background-color: #273450;
+    padding: 50px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.formulario h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.campos {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    background-color: #273450;
+    color: black;
+    font-weight: 10000;
+}
+
+.boton {
+    width: 106%;
+    border: 1px solid black;
+    background: #273450;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    font: 20px;
+    font-weight: bold;
+}
+
+#textSpace {
+    border: 1px solid;
+    background-color: #273450;
+
+}
+
+
+.fotoChat {
+    width: 90%;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+.textoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    color: #273450;
+    font-size: 20px;
+    position: relative;
+    margin: 50px;
+    border-left: 3px solid #273450;
+}
+
+.mapa {
+    margin: auto;
+    padding: 40px
+}
+
+.menuSomos {
+    margin: 100px;
+}
+
+.imgTecno {
+    width: 70%;
+    margin: 30px;
+}
+
+.botonContacto {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background: #273450;
+    padding: 45x;
+    color: white;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inicioProyecto {
+    margin: 100px;
+}
+
+.logoCoca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logoCocaCola {
+    width: 80%;
+}
+
+.textoCoca {
+    width: 300px;
+    height: 180px;
+    font-size: 20px;
+    border-left: black 2px solid;
+}
+
+.cmc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.textoCmc {
+    width: 300px;
+    font-size: 20px;
+    height: 180px;
+    border-right: black 3px solid;
+    margin: 40px;
+    padding: 20px;
+}
+
+.fotoCmc {
+    width: 100%;
+}
+
+.redesProyecto {
+    margin: 50px;
+}
+
+.redesProyecto h3 {
+    padding: 20px;
+}
+
+.redesProyecto p {
+    padding: 20px;
+}
+
+.redesProyecto img {
+    padding: 20px;
+    width: 80%;
+}
+
+.botonProyectos {
+    margin: 30px;
+}
+
+
+.servicios h3 {
+    margin: 15px;
+}
+
+.servicios p {
+    padding: 10px;
+}
+
+.fotoInicio1 {
+    width: 60%;
+}
+
+.fotoInicio2 {
+    width: 60%;
+    height: 250px;
+}
+
+.infoInicio1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoInicio2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* grids */
+
+.index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 0.001fr);
+    grid-template-areas:
+        "nav nav nav nav"
+        "titulo titulo titulo titulo"
+        "body body body body"
+        "nosotros nosotros servicios servicios"
+        "boton boton boton boton"
+        "footer footer footer footer";
+}
+
+.navegacion {
+    grid-area: nav;
+}
+
+.tituloPrincipal {
+    grid-area: titulo;
+}
+
+.partePrincipal {
+    grid-area: body;
+}
+
+.botonProyectos {
+    grid-area: boton;
+}
+
+.infoInicio1 {
+    grid-area: servicios;
+}
+
+.infoInicio2 {
+    grid-area: nosotros;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:500px) {
+    .index {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "titulo"
+            "body"
+            "nosotros"
+            "servicios"
+            "boton"
+            "footer";
+    }
+
+    .navegacion .menu {
+        font-size: 8px;
+    }
+
+    .logoDuvi {
+        width: 80%;
+    }
+
+    .partePrincipal {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .parrafoDer {
+        border: none;
+        width: 80%;
+    }
+
+    .fotoInicio2 {
+        height: 90%;
+    }
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 0.001fr);
+    grid-template-areas:
+        "nav nav"
+        "titulo titulo"
+        "servicio1 servicio2"
+        "servicio3 servicio4"
+        "boton boton"
+        "footer footer";
+}
+
+.navegacion {
+    grid-area: nav;
+}
+
+.principioServicios {
+    grid-area: titulo;
+}
+
+.servicio1 {
+    grid-area: servicio1;
+}
+
+.servicio2 {
+    grid-area: servicio2;
+}
+
+.servicio3 {
+    grid-area: servicio3;
+}
+
+.servicio4 {
+    grid-area: servicio4;
+}
+
+.botonProyectos {
+    grid-area: boton;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.principioServicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+@media screen and (max-width:500px) {
+    .servicios {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "titulo"
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "servicio4"
+            "boton"
+            "footer";
+    }
+
+    .imgServicio {
+        width: 80%;
+    }
+}
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 0.001fr);
+    grid-template-areas:
+        "nav nav"
+        "titulo titulo"
+        "img texto"
+        "formulario mapa"
+        "footer footer";
+}
+
+.navegacion {
+    grid-area: nav;
+}
+
+.contacto1 {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.imgContacto {
+    grid-area: img;
+}
+
+.textoContacto {
+    grid-area: texto;
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Hola Flor como estas? La verdad es que tampoco estoy pudiendo hacer responsive la pantalla de contacto. Nose porque es la unica que no me acomoda el footer y el header y me queda todo descompensado, si me podrias ayudar con esto tambien te agradeceria mucho */
+
+@media screen and (max-width: 500px) {
+    .contacto {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "titulo"
+            "img"
+            "texto"
+            "formulario"
+            "mapa"
+            "footer";
+    }
+
+    .contacto1 {
+        font-size: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgContacto .fotoChat {
+        width: 40%;
+    }
+
+    .textoContacto {
+        font-size: 10px;
+        border: none;
+    }
+
+    .formulario {
+        width: 30%;
+
+    }
+
+    /* IMPORTANTE PARA FLOR */
+    /*Hola Flor como estas? Te dejo este mensaje ya que nunca pudimos ver como achicar el tamaño de un cuadro de texto de un formulario. Puedo achicarlo todo, pero como vas a poder observar en el live server, el cuadro de texto no se reduce con todo el formulario. Si me podes ayudar con eso te agradeceria ya que nose como hacerlo. muchas gracias! */
+
+    .mapa {
+        width: 50%;
+        height: 150%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+
+
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 0, 001fr);
+    grid-template-areas:
+        "nav nav"
+        "titulo titulo"
+        "boton boton"
+        "proyecto1 proyecto1"
+        "proyecto2 proyecto2"
+        "proyecto3 proyecto3"
+        "footer footer";
+}
+
+header {
+    grid-area: nav;
+}
+
+.inicioProyecto {
+    grid-area: titulo;
+}
+
+.botonProyectos {
+    grid-area: boton;
+}
+
+.proyecto1 {
+    grid-area: proyecto1;
+}
+
+.proyecto2 {
+    grid-area: proyecto2;
+}
+
+.redesProyecto {
+    grid-area: proyecto3;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:500px) {
+    .proyectos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "titulo"
+            "boton"
+            "proyecto1"
+            "proyecto2"
+            "proyecto3"
+            "footer";
+    }
+
+    .navegacion {
+        font-size: 8px;
+    }
+
+    .navegacion .menu {
+        width: 100%;
+    }
+
+    .inicioProyecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotoProyecto {
+        width: 130%;
+    }
+
+    .proyecto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoCoca {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoCoca {
+        border: none;
+    }
+
+    .proyecto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cmc {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textoCmc {
+        border: none;
+    }
+
+    .redesProyecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+    }
+
+    .imgRedes {
+        width: 100%;
+    }
+
+    .fotoCmc {
+        width: 80%;
+    }
+}
+
+
+
+.somos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.001fr);
+    grid-template-areas:
+        "nav nav"
+        "titulo titulo"
+        "footer footer";
+}
+
+.navegacion {
+    grid-area: nav;
+}
+
+.menuSomos {
+    grid-area: titulo;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:500px) {
+    .somos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "titulo"
+            "footer";
+    }
+
+    .imgTecno {
+        width: 80%;
+    }
+}
