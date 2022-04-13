@@ -27,7 +27,7 @@
 }
 
 /* Foto navegador */
-.fotoNav{
+.fotoNav {
     height: 5rem;
     width: 5rem;
 }
@@ -81,22 +81,7 @@ ul li a {
     margin-top: 100px;
 }
 
-.submenu {
-    display: none;
-    position: absolute;
-}
 
-.submenu li {
-    display: block;
-    background-color: rgb(32, 124, 177);
-    width: 100px;
-    right: 10px;
-    font-size: 16px;
-}
-
-.menu li:hover .submenu {
-    display: block;
-}
 
 .partePrincipal {
     display: flex;
@@ -190,7 +175,7 @@ footer {
 }
 
 .boton {
-    width: 106%;
+    width: 100%;
     border: 1px solid black;
     background: #273450;
     padding: 10px;
@@ -200,7 +185,14 @@ footer {
     font-weight: bold;
 }
 
+.contacto1{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
 
+.mapaContacto{
+    margin: 80px;
+}
 
 #textSpace {
     border: 1px solid;
@@ -208,9 +200,12 @@ footer {
 
 }
 
+.card{
+    margin: auto;
+    background-color: rgb(94, 146, 206);
+}
 
 .fotoChat {
-    width: 90%;
     padding-bottom: 30px;
     margin-top: 50px;
 }
@@ -235,12 +230,12 @@ footer {
 }
 
 .menuSomos {
-    margin: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
-.imgTecno {
-    width: 70%;
-    margin: 30px;
+.parSomos{
+    margin-top: 150px;
 }
 
 .botonContacto {
@@ -266,9 +261,10 @@ footer {
     margin-bottom: 50px;
 }
 
-.fotoProyecto{
+.fotoProyecto {
     margin: auto;
 }
+
 .logoCoca {
     display: flex;
     flex-direction: row;
@@ -298,9 +294,9 @@ footer {
 }
 
 .textoCmc {
-   
+
     font-size: 20px;
-     
+
     border-right: black 3px solid;
     margin: 40px;
     padding: 20px;
@@ -331,6 +327,10 @@ footer {
     margin: 30px;
 }
 
+/*tamaño foto servicios*/
+.fotoCard {
+    height: 40rem;
+}
 
 .servicios h3 {
     margin: 15px;
@@ -367,3 +367,9 @@ footer {
     margin: 50px;
 }
 
+.principioServicios{
+    margin-top: 150px;
+}
+.imgServicio{
+    margin: auto;
+}
