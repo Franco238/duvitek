@@ -4,21 +4,43 @@
     padding: 0px;
     margin: 0px;
 }
+
 /*color de fondo*/
-.index{
+.index {
     background-image: linear-gradient(rgba(53, 116, 175, 0.719), white);
 }
-.contacto{
+
+.contacto {
     background-image: linear-gradient(rgba(53, 116, 175, 0.719), white);
 }
-.proyectos{
+
+.proyectos {
     background-image: linear-gradient(rgba(53, 116, 175, 0.719), white);
 }
-.servicios{
+
+.servicios {
     background-image: linear-gradient(rgba(53, 116, 175, 0.719), white);
 }
-.somos{
+
+.somos {
     background-image: linear-gradient(rgba(53, 116, 175, 0.719), white);
+}
+
+/* Foto navegador */
+.fotoNav{
+    height: 5rem;
+    width: 5rem;
+}
+
+/*tamaño foto carrousel*/
+.fotoCar {
+    height: 40rem;
+    width: 50rem;
+}
+
+.carrousel {
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -36,17 +58,8 @@ ul li a {
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgb(32, 124, 177);
-    text-decoration: none;
-    color: black;
-    padding: 20px;
     position: fixed;
     top: 0px;
-    width: 100%;
     z-index: 100;
 }
 
@@ -63,13 +76,6 @@ ul li a {
 }
 
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 1em;
-}
 
 .tituloPrincipal {
     margin-top: 100px;
@@ -102,14 +108,22 @@ ul li a {
 /*Animacion logo duvitek*/
 
 @keyframes logo {
-    0% {opacity: 0%;}
-    50%{opacity: 50%;}
-    100%{opacity: 100%;}
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 
 }
+
 .logoDuvi {
     margin: 20px;
-    width: 30%;
     padding-bottom: 10px;
     animation-name: logo;
     animation-delay: 0s;
@@ -120,10 +134,9 @@ ul li a {
 
 .parrafoDer {
     height: 40%;
-    width: 40%;
     padding: 10px 50px;
     border-left: solid black;
-    font-size: 120%;
+    font-size: 1.5rem;
 }
 
 .fotoFondo {
@@ -243,14 +256,19 @@ footer {
 }
 
 /*Usamos hover para cambiar el color del boton*/
-.botonContacto:hover{
+.botonContacto:hover {
     color: #273450;
     background-color: white;
 }
+
 .inicioProyecto {
-    margin: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
+.fotoProyecto{
+    margin: auto;
+}
 .logoCoca {
     display: flex;
     flex-direction: row;
@@ -265,8 +283,7 @@ footer {
 }
 
 .textoCoca {
-    width: 300px;
-    height: 180px;
+
     font-size: 20px;
     border-left: black 2px solid;
 }
@@ -281,9 +298,9 @@ footer {
 }
 
 .textoCmc {
-    width: 300px;
+   
     font-size: 20px;
-    height: 180px;
+     
     border-right: black 3px solid;
     margin: 40px;
     padding: 20px;
@@ -307,7 +324,7 @@ footer {
 
 .redesProyecto img {
     padding: 20px;
-    width: 80%;
+    margin: auto;
 }
 
 .botonProyectos {
@@ -346,418 +363,7 @@ footer {
     align-items: center;
 }
 
-/* grids */
-
-.index {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 0.001fr);
-    grid-template-areas:
-        "nav nav nav nav"
-        "titulo titulo titulo titulo"
-        "body body body body"
-        "nosotros nosotros servicios servicios"
-        "boton boton boton boton"
-        "footer footer footer footer";
+.seccionInicio {
+    margin: 50px;
 }
-
-.navegacion {
-    grid-area: nav;
-}
-
-.tituloPrincipal {
-    grid-area: titulo;
-}
-
-.partePrincipal {
-    grid-area: body;
-}
-
-.botonProyectos {
-    grid-area: boton;
-}
-
-.infoInicio1 {
-    grid-area: servicios;
-}
-
-.infoInicio2 {
-    grid-area: nosotros;
-}
-
-footer {
-    grid-area: footer;
-}
-
-@media screen and (max-width:500px) {
-    .index {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "titulo"
-            "body"
-            "nosotros"
-            "servicios"
-            "boton"
-            "footer";
-    }
-
-    .navegacion .menu {
-        font-size: 8px;
-    }
-
-    .logoDuvi {
-        width: 80%;
-
-    }
-
-    .partePrincipal {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 80px;
-    }
-
-    .parrafoDer {
-        border: none;
-        width: 80%;
-    }
-
-    .fotoInicio2 {
-        height: 90%;
-    }
-}
-
-.servicios {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 0.001fr);
-    grid-template-areas:
-        "nav nav"
-        "titulo titulo"
-        "servicio1 servicio2"
-        "servicio3 servicio4"
-        "boton boton"
-        "footer footer";
-}
-
-.navegacion {
-    grid-area: nav;
-}
-
-.principioServicios {
-    grid-area: titulo;
-}
-
-.servicio1 {
-    grid-area: servicio1;
-}
-
-.servicio2 {
-    grid-area: servicio2;
-}
-
-.servicio3 {
-    grid-area: servicio3;
-}
-
-.servicio4 {
-    grid-area: servicio4;
-}
-
-.botonProyectos {
-    grid-area: boton;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.principioServicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
-
-@media screen and (max-width:500px) {
-    .servicios {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "titulo"
-            "servicio1"
-            "servicio2"
-            "servicio3"
-            "servicio4"
-            "boton"
-            "footer";
-    }
-
-    .imgServicio {
-        width: 80%;
-    }
-}
-
-
-.contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 0.001fr);
-    grid-template-areas:
-        "nav nav"
-        "titulo titulo"
-        "img texto"
-        "formulario mapa"
-        "footer footer";
-}
-
-.navegacion {
-    grid-area: nav;
-}
-
-.contacto1 {
-    grid-area: titulo;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-}
-
-.imgContacto {
-    grid-area: img;
-}
-
-.textoContacto {
-    grid-area: texto;
-}
-
-.formulario {
-    grid-area: formulario;
-}
-
-.mapa {
-    grid-area: mapa;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* Hola Flor como estas? La verdad es que tampoco estoy pudiendo hacer responsive la pantalla de contacto. Nose porque es la unica que no me acomoda el footer y el header y me queda todo descompensado, si me podrias ayudar con esto tambien te agradeceria mucho */
-
-@media screen and (max-width: 500px) {
-    .contacto {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "titulo"
-            "img"
-            "texto"
-            "formulario"
-            "mapa"
-            "footer";
-    }
-
-    .contacto1 {
-        font-size: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imgContacto .fotoChat {
-        width: 40%;
-    }
-
-    .textoContacto {
-        font-size: 10px;
-        border: none;
-    }
-
-    .formulario {
-        width: 30%;
-
-    }
-
-    /* IMPORTANTE PARA FLOR */
-    /*Hola Flor como estas? Te dejo este mensaje ya que nunca pudimos ver como achicar el tamaño de un cuadro de texto de un formulario. Puedo achicarlo todo, pero como vas a poder observar en el live server, el cuadro de texto no se reduce con todo el formulario. Si me podes ayudar con eso te agradeceria ya que nose como hacerlo. muchas gracias! */
-
-    .mapa {
-        width: 50%;
-        height: 150%;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-}
-
-
-
-
-.proyectos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 0, 001fr);
-    grid-template-areas:
-        "nav nav"
-        "titulo titulo"
-        "boton boton"
-        "proyecto1 proyecto1"
-        "proyecto2 proyecto2"
-        "proyecto3 proyecto3"
-        "footer footer";
-}
-
-header {
-    grid-area: nav;
-}
-
-.inicioProyecto {
-    grid-area: titulo;
-}
-
-.botonProyectos {
-    grid-area: boton;
-}
-
-.proyecto1 {
-    grid-area: proyecto1;
-}
-
-.proyecto2 {
-    grid-area: proyecto2;
-}
-
-.redesProyecto {
-    grid-area: proyecto3;
-}
-
-footer {
-    grid-area: footer;
-}
-
-@media screen and (max-width:500px) {
-    .proyectos {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "titulo"
-            "boton"
-            "proyecto1"
-            "proyecto2"
-            "proyecto3"
-            "footer";
-    }
-
-    .navegacion {
-        font-size: 8px;
-    }
-
-    .navegacion .menu {
-        width: 100%;
-    }
-
-    .inicioProyecto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .fotoProyecto {
-        width: 130%;
-    }
-
-    .proyecto1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logoCoca {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .textoCoca {
-        border: none;
-    }
-
-    .proyecto2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cmc {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .textoCmc {
-        border: none;
-    }
-
-    .redesProyecto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 75%;
-    }
-
-    .imgRedes {
-        width: 100%;
-    }
-
-    .fotoCmc {
-        width: 80%;
-    }
-}
-
-
-
-.somos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 0.001fr);
-    grid-template-areas:
-        "nav nav"
-        "titulo titulo"
-        "footer footer";
-}
-
-.navegacion {
-    grid-area: nav;
-}
-
-.menuSomos {
-    grid-area: titulo;
-}
-
-footer {
-    grid-area: footer;
-}
-
-@media screen and (max-width:500px) {
-    .somos {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "titulo"
-            "footer";
-    }
-
-    .imgTecno {
-        width: 80%;
-    }
-}
-
 
