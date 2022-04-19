@@ -49,7 +49,7 @@ ul {
 
 .negrita {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 ul li a {
@@ -83,13 +83,6 @@ ul li a {
 
 
 
-.partePrincipal {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
 /*Animacion logo duvitek*/
 
 @keyframes logo {
@@ -108,20 +101,24 @@ ul li a {
 }
 
 .logoDuvi {
-    margin: 20px;
-    padding-bottom: 10px;
+
     animation-name: logo;
-    animation-delay: 0s;
+    animation-delay: 5s;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
 
 .parrafoDer {
-    height: 40%;
-    padding: 10px 50px;
+
     border-left: solid black;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width:500px) {
+    .parrafoDer {
+        border: none;
+    }
 }
 
 .fotoFondo {
@@ -140,8 +137,8 @@ ul li a {
 
 
 .foto {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
 }
 
 footer {
@@ -158,7 +155,7 @@ footer {
 }
 
 .formulario h4 {
-    font-size: 20px;
+    font-size: 1.2rem;
     padding-bottom: 20px;
     color: white;
     text-align: center;
@@ -181,16 +178,16 @@ footer {
     padding: 10px;
     color: white;
     margin: 10px 0;
-    font: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-.contacto1{
+.contacto1 {
     margin-top: 150px;
     margin-bottom: 80px;
 }
 
-.mapaContacto{
+.mapaContacto {
     margin: 80px;
 }
 
@@ -200,7 +197,7 @@ footer {
 
 }
 
-.card{
+.cardContacto {
     margin: auto;
     background-color: rgb(94, 146, 206);
 }
@@ -218,7 +215,7 @@ footer {
 
 
     color: #273450;
-    font-size: 20px;
+    font-size: 1.2rem;
     position: relative;
     margin: 50px;
     border-left: 3px solid #273450;
@@ -234,7 +231,7 @@ footer {
     margin-bottom: 50px;
 }
 
-.parSomos{
+.parSomos {
     margin-top: 150px;
 }
 
@@ -246,7 +243,7 @@ footer {
     padding: 45x;
     color: white;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -275,12 +272,13 @@ footer {
 }
 
 .logoCocaCola {
-    width: 80%;
+    width: 100%;
 }
+
 
 .textoCoca {
 
-    font-size: 20px;
+    font-size: 1.2rem;
     border-left: black 2px solid;
 }
 
@@ -295,7 +293,7 @@ footer {
 
 .textoCmc {
 
-    font-size: 20px;
+    font-size: 1.2rem;
 
     border-right: black 3px solid;
     margin: 40px;
@@ -330,6 +328,23 @@ footer {
 /*tamaño foto servicios*/
 .fotoCard {
     height: 40rem;
+
+}
+
+@media screen and (max-width:500px) {
+    .fotoCard {
+        height: 20rem
+    }
+}
+
+@media screen and (max-width:500px) {
+    .carrousel {
+        height: 20rem;
+    }
+
+    .fotoCar {
+        height: 20rem;
+    }
 }
 
 .servicios h3 {
@@ -367,9 +382,20 @@ footer {
     margin: 50px;
 }
 
-.principioServicios{
+.principioServicios {
     margin-top: 150px;
 }
-.imgServicio{
+
+.imgServicio {
     margin: auto;
+}
+
+/*decoracion links*/
+a:hover {
+    background-color: rgb(144, 144, 241);
+}
+
+.parrafoDer {
+    display: flex;
+    align-items: center;
 }
