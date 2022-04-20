@@ -1,0 +1,291 @@
+@charset "UTF-8";
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 0px; }
+
+/*color de fondo*/
+.index {
+  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+
+.contacto {
+  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+
+.proyectos {
+  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+
+.servicios {
+  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+  .servicios p {
+    padding: 10px; }
+  .servicios h3 {
+    margin: 15px; }
+
+.somos {
+  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+
+/* Foto navegador */
+.fotoNav {
+  height: 5rem;
+  width: 5rem; }
+
+/*tamaño foto carrousel*/
+.fotoCar {
+  height: 40rem;
+  width: 50rem; }
+
+.carrousel {
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+ul {
+  list-style-type: none; }
+  ul li a {
+    text-decoration: none;
+    color: black; }
+
+.negrita {
+  font-weight: bold;
+  font-size: 2rem; }
+
+.menu {
+  position: fixed;
+  top: 0px;
+  z-index: 100; }
+
+.infoInicio {
+  margin: 20px; }
+  .infoInicio h2 {
+    margin: 15px; }
+  .infoInicio p {
+    margin: 5px; }
+
+.tituloPrincipal {
+  margin-top: 100px; }
+
+/*Animacion logo duvitek*/
+@keyframes logo {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 50%; }
+  100% {
+    opacity: 100%; } }
+
+.logoDuvi {
+  animation-name: logo;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
+
+.parrafoDer {
+  border-left: solid black;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center; }
+
+@media screen and (max-width: 500px) {
+  .parrafoDer {
+    border: none; }
+  .fotoCard {
+    height: 20rem; }
+  .carrousel {
+    height: 20rem; }
+  .fotoCar {
+    height: 20rem; } }
+
+.fotoFondo {
+  background-image: url(https://i0.wp.com/herramientasgratis.com/wp-content/uploads/2018/10/Capture-1.png?resize=1210%2C642);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em; }
+
+.foto {
+  width: 3rem;
+  height: 3rem; }
+
+footer {
+  padding-bottom: 30px; }
+
+.formulario {
+  width: 400px;
+  background-color: #273450;
+  padding: 50px;
+  margin: auto;
+  border-radius: 10px; }
+  .formulario h4 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center; }
+
+.campos {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  background-color: #273450;
+  color: black;
+  font-weight: 10000; }
+
+.boton {
+  width: 100%;
+  border: 1px solid black;
+  background: #273450;
+  padding: 10px;
+  color: white;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.contacto1 {
+  margin-top: 150px;
+  margin-bottom: 80px; }
+
+.mapaContacto {
+  margin: 80px; }
+
+#textSpace {
+  border: 1px solid;
+  background-color: #273450; }
+
+.cardContacto {
+  margin: auto;
+  background-color: #5e92ce; }
+
+.fotoChat {
+  padding-bottom: 30px;
+  margin-top: 50px; }
+
+.textoContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #273450;
+  font-size: 1.2rem;
+  position: relative;
+  margin: 50px;
+  border-left: 3px solid #273450; }
+
+.mapa {
+  margin: auto;
+  padding: 40px; }
+
+.menuSomos {
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+.parSomos {
+  margin-top: 150px; }
+
+.botonContacto {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  background: #273450;
+  padding: 45x;
+  color: white;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold; }
+  .botonContacto:hover {
+    color: #273450;
+    background-color: white; }
+
+/*Usamos hover para cambiar el color del boton*/
+.inicioProyecto {
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+.fotoProyecto {
+  margin: auto; }
+
+.logoCoca {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.logoCocaCola {
+  width: 100%; }
+
+.textoCoca {
+  font-size: 1.2rem;
+  border-left: black 2px solid; }
+
+.cmc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.textoCmc {
+  font-size: 1.2rem;
+  border-right: black 3px solid;
+  margin: 40px;
+  padding: 20px; }
+
+.fotoCmc {
+  width: 100%; }
+
+.redesProyecto {
+  margin: 50px; }
+  .redesProyecto h3 {
+    padding: 20px; }
+  .redesProyecto p {
+    padding: 20px; }
+  .redesProyecto img {
+    padding: 20px;
+    margin: auto; }
+
+.botonProyectos {
+  margin: 30px; }
+
+/*tamaño foto servicios*/
+.fotoCard {
+  height: 40rem; }
+
+.fotoInicio1 {
+  width: 60%; }
+
+.fotoInicio2 {
+  width: 60%;
+  height: 250px; }
+
+.infoInicio1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.infoInicio2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.seccionInicio {
+  margin: 50px; }
+
+.principioServicios {
+  margin-top: 150px; }
+
+.imgServicio {
+  margin: auto; }
+
+/*decoracion links*/
+a:hover {
+  background-color: #9090f1; }
