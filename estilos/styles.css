@@ -3,27 +3,28 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  color: white; }
 
-/*color de fondo*/
+/*fondo de pantalla*/
 .index {
-  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
-
-.contacto {
-  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
-
-.proyectos {
-  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+  background-image: linear-gradient(black, #535353); }
 
 .servicios {
-  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+  background-image: linear-gradient(black, #535353); }
   .servicios p {
     padding: 10px; }
   .servicios h3 {
     margin: 15px; }
 
+.contacto {
+  background-image: linear-gradient(black, #535353); }
+
 .somos {
-  background-image: linear-gradient(rgba(53, 116, 175, 0.719), white); }
+  background-image: linear-gradient(black, #535353); }
+
+.proyectos {
+  background-image: linear-gradient(black, #535353); }
 
 /* Foto navegador */
 .fotoNav {
@@ -97,9 +98,14 @@ ul {
     height: 20rem; } }
 
 .fotoFondo {
-  background-image: url(https://i0.wp.com/herramientasgratis.com/wp-content/uploads/2018/10/Capture-1.png?resize=1210%2C642);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #5f5d5d;
+  color: black; }
+
+.card-title {
+  color: black; }
+
+.card-text {
+  color: black; }
 
 .redes {
   display: flex;
@@ -188,6 +194,7 @@ footer {
   margin-top: 150px; }
 
 .botonContacto {
+  border-radius: 50px;
   width: 200px;
   height: 50px;
   border: 1px solid black;
@@ -286,6 +293,11 @@ footer {
 .imgServicio {
   margin: auto; }
 
-/*decoracion links*/
-a:hover {
-  background-color: #9090f1; }
+.botonSus {
+  width: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 50px; }
+  .botonSus:hover {
+    background-color: black;
+    color: white; }

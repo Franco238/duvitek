@@ -5,22 +5,15 @@
     text-align: center;
     padding: 0px;
     margin: 0px;
+    color: $colorLetras;
 }
 
-/*color de fondo*/
+
+/*fondo de pantalla*/
 .index {
     background-image: $colorFondo;
 }
-
-.contacto {
-    background-image: $colorFondo;
-}
-
-.proyectos {
-    background-image: $colorFondo;
-}
-
-.servicios {
+.servicios{
     background-image: $colorFondo;
     p {
         padding: 10px;
@@ -29,10 +22,16 @@
         margin: 15px;
     }
 }
-
-.somos {
+.contacto{
     background-image: $colorFondo;
 }
+.somos{
+    background-image: $colorFondo;
+}
+.proyectos{
+    background-image: $colorFondo;
+}
+
 
 /* Foto navegador */
 .fotoNav {
@@ -103,6 +102,7 @@ ul {
 
 }
 
+
 .logoDuvi {
 
     animation-name: logo;
@@ -137,10 +137,16 @@ ul {
     }
 }
 
-.fotoFondo {
-    background-image: url(https://i0.wp.com/herramientasgratis.com/wp-content/uploads/2018/10/Capture-1.png?resize=1210%2C642);
-    background-repeat: no-repeat;
-    background-size: cover;
+.fotoFondo{
+    background-color: rgb(95, 93, 93);
+    color: black;
+}
+
+.card-title{
+    color: black;
+}
+.card-text{
+    color: black;
 }
 
 .redes {
@@ -251,6 +257,7 @@ footer {
 }
 
 .botonContacto {
+    border-radius: 50px;
     width: 200px;
     height: 50px;
     border: 1px solid black;
@@ -379,7 +386,13 @@ footer {
     margin: auto;
 }
 
-/*decoracion links*/
-a:hover {
-    background-color: rgb(144, 144, 241);
+.botonSus{
+    width: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    &:hover{
+        background-color: black;
+        color:white;
+    }
 }
