@@ -7,24 +7,14 @@
   color: white; }
 
 /*fondo de pantalla*/
-.index {
+.index, .servicios, .contacto, .somos, .proyectos {
   background-image: linear-gradient(black, #535353); }
 
-.servicios {
-  background-image: linear-gradient(black, #535353); }
-  .servicios p {
-    padding: 10px; }
-  .servicios h3 {
-    margin: 15px; }
+.servicios p {
+  padding: 10px; }
 
-.contacto {
-  background-image: linear-gradient(black, #535353); }
-
-.somos {
-  background-image: linear-gradient(black, #535353); }
-
-.proyectos {
-  background-image: linear-gradient(black, #535353); }
+.servicios h3 {
+  margin: 15px; }
 
 /* Foto navegador */
 .fotoNav {
@@ -187,28 +177,11 @@ footer {
   padding: 40px; }
 
 .menuSomos {
-  margin-top: 150px;
   margin-bottom: 50px; }
 
-.parSomos {
+.parSomos, .menuSomos {
   margin-top: 150px; }
 
-.botonContacto {
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  border: 1px solid black;
-  background: #273450;
-  padding: 45x;
-  color: white;
-  margin: 10px 0;
-  font-size: 1.2rem;
-  font-weight: bold; }
-  .botonContacto:hover {
-    color: #273450;
-    background-color: white; }
-
-/*Usamos hover para cambiar el color del boton*/
 .inicioProyecto {
   margin-top: 150px;
   margin-bottom: 50px; }
@@ -216,12 +189,13 @@ footer {
 .fotoProyecto {
   margin: auto; }
 
-.logoCoca {
+.logoCoca, .cmc {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-bottom: 40px; }
 
 .logoCocaCola {
@@ -230,14 +204,6 @@ footer {
 .textoCoca {
   font-size: 1.2rem;
   border-left: black 2px solid; }
-
-.cmc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px; }
 
 .textoCmc {
   font-size: 1.2rem;
@@ -258,9 +224,6 @@ footer {
     padding: 20px;
     margin: auto; }
 
-.botonProyectos {
-  margin: 30px; }
-
 /*tamaño foto servicios*/
 .fotoCard {
   height: 40rem; }
@@ -272,13 +235,7 @@ footer {
   width: 60%;
   height: 250px; }
 
-.infoInicio1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.infoInicio2 {
+.infoInicio1, .infoInicio2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,3 +258,20 @@ footer {
   .botonSus:hover {
     background-color: black;
     color: white; }
+
+.botonContacto {
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #273450;
+  padding: 45x;
+  color: white;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold; }
+  .botonContacto:hover {
+    color: #273450;
+    background-color: white; }
+
+/*Usamos hover para cambiar el color del boton*/

@@ -14,7 +14,7 @@
     background-image: $colorFondo;
 }
 .servicios{
-    background-image: $colorFondo;
+    @extend .index;
     p {
         padding: 10px;
     }
@@ -23,15 +23,24 @@
     }
 }
 .contacto{
-    background-image: $colorFondo;
+    @extend .index;
 }
 .somos{
-    background-image: $colorFondo;
+    @extend .index;
 }
 .proyectos{
-    background-image: $colorFondo;
+    @extend .index;
 }
 
+
+//mixin
+
+@mixin flexbox($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+};
 
 /* Foto navegador */
 .fotoNav {
@@ -150,10 +159,7 @@ ul {
 }
 
 .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex, row, center, center);
     gap: 1em;
 }
 
@@ -229,12 +235,8 @@ footer {
 }
 
 .textoContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    @include flexbox(flex, column, center, center);
+    
     color: #273450;
     font-size: 1.2rem;
     position: relative;
@@ -248,31 +250,13 @@ footer {
 }
 
 .menuSomos {
-    margin-top: 150px;
+    @extend .parSomos;
     margin-bottom: 50px;
 }
 
 .parSomos {
     margin-top: 150px;
 }
-
-.botonContacto {
-    border-radius: 50px;
-    width: 200px;
-    height: 50px;
-    border: 1px solid black;
-    background: #273450;
-    padding: 45x;
-    color: white;
-    margin: 10px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    &:hover {
-        color: #273450;
-        background-color: white;
-    }
-}
-/*Usamos hover para cambiar el color del boton*/
 
 
 .inicioProyecto {
@@ -285,11 +269,9 @@ footer {
 }
 
 .logoCoca {
-    display: flex;
+    @include flexbox(flex, row, center, center);
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 40px;
 }
 
@@ -305,12 +287,7 @@ footer {
 }
 
 .cmc {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+    @extend .logoCoca
 }
 
 .textoCmc {
@@ -341,10 +318,6 @@ footer {
 }
 
 
-.botonProyectos {
-    margin: 30px;
-}
-
 /*tamaño foto servicios*/
 .fotoCard {
     height: 40rem;
@@ -361,17 +334,11 @@ footer {
 }
 
 .infoInicio1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex, column, center, center)
 }
 
 .infoInicio2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .infoInicio1
 }
 
 .seccionInicio {
@@ -396,3 +363,33 @@ footer {
         color:white;
     }
 }
+
+
+// Map get
+$estilosBoton: (
+    color: white,
+    Cfondo: #273450,
+    Redondeado: 50px,
+    Tfuente: 1.2rem,
+    borde: 1px solid black, 
+
+);
+
+.botonContacto {
+    border-radius: map-get($estilosBoton, Redondeado);
+    width: 200px;
+    height: 50px;
+    border: map-get($estilosBoton, borde );
+    background-color: map-get($estilosBoton, Cfondo);
+    padding: 45x;
+    color:map-get($estilosBoton, color);
+    margin: 10px 0;
+    font-size: map-get($estilosBoton, Tfuente);
+    font-weight: bold;
+    &:hover {
+        color: #273450;
+        background-color: white;
+    }
+}
+/*Usamos hover para cambiar el color del boton*/
+
