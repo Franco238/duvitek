@@ -13,34 +13,42 @@
 .index {
     background-image: $colorFondo;
 }
-.servicios{
+
+.servicios {
     @extend .index;
+
     p {
         padding: 10px;
     }
+
     h3 {
         margin: 15px;
     }
 }
-.contacto{
+
+.contacto {
     @extend .index;
 }
-.somos{
+
+.somos {
     @extend .index;
 }
-.proyectos{
+
+.proyectos {
     @extend .index;
 }
 
 
 //mixin
 
-@mixin flexbox($flex, $direction, $justify, $align){
+@mixin flexbox($flex, $direction, $justify, $align) {
     display: $flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-};
+}
+
+;
 
 /* Foto navegador */
 .fotoNav {
@@ -61,6 +69,7 @@
 
 ul {
     list-style-type: none;
+
     li a {
         text-decoration: none;
         color: black;
@@ -81,9 +90,11 @@ ul {
 
 .infoInicio {
     margin: 20px;
+
     h2 {
         margin: 15px;
     }
+
     p {
         margin: 5px;
     }
@@ -125,16 +136,17 @@ ul {
 
     border-left: solid black;
     font-size: 1.5rem;
-    
+
     display: flex;
     align-items: center;
 }
 
 @media screen and (max-width:500px) {
-    .carrousel .carousel{
+    .carrousel .carousel {
         height: 20rem;
     }
-    .carousel-item .fotoCar{
+
+    .carousel-item .fotoCar {
         height: 20rem;
     }
 
@@ -142,41 +154,50 @@ ul {
     .parrafoDer {
         border: none;
     }
-    .logoCoca{
+
+    .logoCoca {
         flex-direction: column;
-        .textoCoca{
-            border-left: none;}
+
+        .textoCoca {
+            border-left: none;
+        }
     }
-    .proyecto2 .cmc{
+
+    .proyecto2 .cmc {
         flex-direction: column;
-        .textoCmc{
+
+        .textoCmc {
             border-right: none;
         }
     }
-    .infoInicio2 .fotoInicio2{
+
+    .infoInicio2 .fotoInicio2 {
         width: 20rem;
     }
-    .infoInicio1 .fotoInicio1{
+
+    .infoInicio1 .fotoInicio1 {
         width: 20rem;
     }
 
     section .mapaContacto {
         margin: 0px;
-    }    
-    .mapaContacto .mapa{
+    }
+
+    .mapaContacto .mapa {
         height: 20rem;
     }
 }
 
-.fotoFondo{
+.fotoFondo {
     background-color: rgb(95, 93, 93);
     color: black;
 }
 
-.card-title{
+.card-title {
     color: black;
 }
-.card-text{
+
+.card-text {
     color: black;
 }
 
@@ -191,7 +212,7 @@ ul {
     height: 3rem;
 }
 
-footer{
+footer {
     padding: 10px 0px;
 }
 
@@ -201,6 +222,7 @@ footer{
     padding: 50px;
     margin: auto;
     border-radius: 10px;
+
     h4 {
         font-size: 1.2rem;
         padding-bottom: 20px;
@@ -257,7 +279,7 @@ footer{
 
 .textoContacto {
     @include flexbox(flex, column, center, center);
-    
+
     color: #273450;
     font-size: 1.2rem;
     position: relative;
@@ -308,7 +330,7 @@ footer{
 
 .cmc {
     @include flexbox(flex, row, center, center);
-    
+
 }
 
 .textoCmc {
@@ -324,12 +346,15 @@ footer{
 
 .redesProyecto {
     margin: 50px;
+
     h3 {
         padding: 20px 0px;
     }
+
     p {
         padding: 20px 0px;
     }
+
     img {
         padding: 20px 0px;
         margin: auto;
@@ -372,25 +397,25 @@ footer{
     margin: auto;
 }
 
-.botonSus{
+.botonSus {
     width: 100px;
     background-color: white;
     color: black;
     border-radius: 50px;
-    &:hover{
+
+    &:hover {
         background-color: black;
-        color:white;
+        color: white;
     }
 }
 
 
 // Map get
-$estilosBoton: (
-    color: white,
+$estilosBoton: (color: white,
     Cfondo: #273450,
     Redondeado: 50px,
     Tfuente: 1.2rem,
-    borde: 1px solid black, 
+    borde: 1px solid black,
 
 );
 
@@ -398,17 +423,18 @@ $estilosBoton: (
     border-radius: map-get($estilosBoton, Redondeado);
     width: 200px;
     height: 50px;
-    border: map-get($estilosBoton, borde );
+    border: map-get($estilosBoton, borde);
     background-color: map-get($estilosBoton, Cfondo);
     padding: 45x;
-    color:map-get($estilosBoton, color);
+    color: map-get($estilosBoton, color);
     margin: 10px 0;
     font-size: map-get($estilosBoton, Tfuente);
     font-weight: bold;
+
     &:hover {
         color: #273450;
         background-color: white;
     }
 }
-/*Usamos hover para cambiar el color del boton*/
 
+/*Usamos hover para cambiar el color del boton*/
