@@ -131,17 +131,39 @@ ul {
 }
 
 @media screen and (max-width:500px) {
-    .parrafoDer {
-        border: none;
+    .carrousel .carousel{
+        height: 20rem;
     }
-    .fotoCard {
-        height: 20rem
-    }
-    .carrousel {
+    .carousel-item .fotoCar{
         height: 20rem;
     }
 
-    .fotoCar {
+
+    .parrafoDer {
+        border: none;
+    }
+    .logoCoca{
+        flex-direction: column;
+        .textoCoca{
+            border-left: none;}
+    }
+    .proyecto2 .cmc{
+        flex-direction: column;
+        .textoCmc{
+            border-right: none;
+        }
+    }
+    .infoInicio2 .fotoInicio2{
+        width: 20rem;
+    }
+    .infoInicio1 .fotoInicio1{
+        width: 20rem;
+    }
+
+    section .mapaContacto {
+        margin: 0px;
+    }    
+    .mapaContacto .mapa{
         height: 20rem;
     }
 }
@@ -169,10 +191,9 @@ ul {
     height: 3rem;
 }
 
-footer {
-    padding-bottom: 30px;
+footer{
+    padding: 10px 0px;
 }
-
 
 .formulario {
     width: 400px;
@@ -215,7 +236,7 @@ footer {
 }
 
 .mapaContacto {
-    margin: 80px;
+    margin: 20px;
 }
 
 #textSpace {
@@ -225,8 +246,8 @@ footer {
 }
 
 .cardContacto {
-    margin: auto;
     background-color: rgb(94, 146, 206);
+    height: 35rem;
 }
 
 .fotoChat {
@@ -246,7 +267,8 @@ footer {
 
 .mapa {
     margin: auto;
-    padding: 40px
+    padding: 40px;
+    height: 35rem
 }
 
 .menuSomos {
@@ -270,8 +292,6 @@ footer {
 
 .logoCoca {
     @include flexbox(flex, row, center, center);
-    flex-direction: row;
-    flex-wrap: nowrap;
     margin-bottom: 40px;
 }
 
@@ -287,16 +307,15 @@ footer {
 }
 
 .cmc {
-    @extend .logoCoca
+    @include flexbox(flex, row, center, center);
+    
 }
 
 .textoCmc {
 
     font-size: 1.2rem;
 
-    border-right: black 3px solid;
-    margin: 40px;
-    padding: 20px;
+    border-right: black 2px solid;
 }
 
 .fotoCmc {
@@ -306,13 +325,13 @@ footer {
 .redesProyecto {
     margin: 50px;
     h3 {
-        padding: 20px;
+        padding: 20px 0px;
     }
     p {
-        padding: 20px;
+        padding: 20px 0px;
     }
     img {
-        padding: 20px;
+        padding: 20px 0px;
         margin: auto;
     }
 }
