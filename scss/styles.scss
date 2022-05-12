@@ -12,6 +12,8 @@
 /*fondo de pantalla*/
 .index {
     background-image: $colorFondo;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 .servicios {

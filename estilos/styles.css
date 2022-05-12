@@ -8,7 +8,9 @@
 
 /*fondo de pantalla*/
 .index, .servicios, .contacto, .somos, .proyectos {
-  background-image: linear-gradient(black, #535353); }
+  background-image: url(https://consultorescpc.com.co/wp-content/uploads/2019/03/fondo-web-gris-3-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .servicios p {
   padding: 10px; }
