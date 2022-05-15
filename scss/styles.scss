@@ -7,7 +7,9 @@
     margin: 0px;
     color: $colorLetras;
 }
-
+.textoFooter{
+    color: black;
+}
 
 /*fondo de pantalla*/
 .index {
@@ -197,8 +199,8 @@ ul {
 }
 
 .fotoFondo {
-    background-color: #5573b4;
-    color: black;
+    background-color: black;
+    color:white;
 }
 
 .card-title {
@@ -207,6 +209,10 @@ ul {
 
 .card-text {
     color: black;
+}
+
+.botonServicios{
+    margin: 50px
 }
 
 .redes {
@@ -445,8 +451,5 @@ $estilosBoton: (color: #5573b4,
     }
 }
 
-.container-fluid{
-    background-color: blue;
-}
 /*Usamos hover para cambiar el color del boton*/
 

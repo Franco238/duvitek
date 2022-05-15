@@ -6,6 +6,9 @@
   margin: 0px;
   color: white; }
 
+.textoFooter {
+  color: black; }
+
 /*fondo de pantalla*/
 .index, .servicios, .contacto, .somos, .proyectos {
   background-image: url(https://cdn.pixabay.com/photo/2020/01/02/10/15/background-image-4735444_960_720.png);
@@ -111,14 +114,17 @@ ul {
     height: 20rem; } }
 
 .fotoFondo {
-  background-color: #5573b4;
-  color: black; }
+  background-color: black;
+  color: white; }
 
 .card-title {
   color: black; }
 
 .card-text {
   color: black; }
+
+.botonServicios {
+  margin: 50px; }
 
 .redes {
   display: flex;
@@ -300,8 +306,5 @@ footer {
   .botonContacto:hover {
     color: white;
     background-color: #5573b4; }
-
-.container-fluid {
-  background-color: blue; }
 
 /*Usamos hover para cambiar el color del boton*/
