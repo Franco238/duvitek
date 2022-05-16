@@ -32,7 +32,7 @@
   width: 100%; }
 
 .carrousel {
-  margin-top: 110px;
+  margin-top: 100px;
   margin-bottom: 50px; }
 
 .carousel-caption h1 {
@@ -111,7 +111,9 @@ ul {
   section .mapaContacto {
     margin: 0px; }
   .mapaContacto .mapa {
-    height: 20rem; } }
+    height: 20rem; }
+  .container-fluid {
+    background-color: white; } }
 
 .fotoFondo {
   background-color: black;
@@ -308,3 +310,8 @@ footer {
     background-color: #5573b4; }
 
 /*Usamos hover para cambiar el color del boton*/
+.container-fluid {
+  background-color: rgba(128, 128, 128, 0.075);
+  font-size: 2rem; }
+  .container-fluid a .nav-link {
+    color: white; }
