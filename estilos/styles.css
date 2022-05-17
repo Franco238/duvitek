@@ -28,11 +28,10 @@
 
 /*tamaño foto carrousel*/
 .fotoCar {
-  height: 50rem;
+  height: 55rem;
   width: 100%; }
 
 .carrousel {
-  margin-top: 100px;
   margin-bottom: 50px; }
 
 .carousel-caption h1 {
