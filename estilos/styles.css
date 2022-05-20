@@ -200,7 +200,7 @@ footer {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid  #5573b4;
+  border: 1px solid #5573b4;
   color: black;
   font-weight: 10000; }
 
@@ -361,7 +361,7 @@ footer {
 
 /*Usamos hover para cambiar el color del boton*/
 .container-fluid {
-  background-color: rgba(128, 128, 128, 0.075);
+  background-color: rgba(128, 128, 128, 0.007);
   font-size: 2rem; }
 
 .fotoEquipo {

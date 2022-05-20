@@ -7,7 +7,8 @@
     margin: 0px;
     color: $colorLetras;
 }
-.textoFooter{
+
+.textoFooter {
     color: black;
 }
 
@@ -70,10 +71,15 @@
     margin-bottom: 50px;
 }
 
-.carousel-caption{
-    h1 {color: black;}
-    p {color: black;
-    font-size: 1.5rem;}
+.carousel-caption {
+    h1 {
+        color: black;
+    }
+
+    p {
+        color: black;
+        font-size: 1.5rem;
+    }
 }
 
 ul {
@@ -195,24 +201,26 @@ ul {
     .mapaContacto .mapa {
         height: 20rem;
     }
-    .container-fluid{
+
+    .container-fluid {
         background-color: white;
     }
-    div .fotoEquipo{
+
+    div .fotoEquipo {
         height: 300px;
     }
 
-    div .parSomos{
+    div .parSomos {
         font-size: 14px;
     }
 
-    div .fotoCard{
+    div .fotoCard {
         height: 300px;
     }
 }
 
-@media screen and (min-width:501px) and (max-width:800px){
-    
+@media screen and (min-width:501px) and (max-width:800px) {
+
     .parrafoDer {
         border: none;
     }
@@ -223,11 +231,12 @@ ul {
         .textoCoca {
             border-left: none;
         }
-        .logoCocaCola{
+
+        .logoCocaCola {
             width: 80%;
             margin: auto;
         }
-        
+
     }
 
     .proyecto2 .cmc {
@@ -236,8 +245,11 @@ ul {
         .textoCmc {
             border-right: none;
         }
-        .fotoCmc{width: 80%;
-        margin: auto;}
+
+        .fotoCmc {
+            width: 80%;
+            margin: auto;
+        }
     }
 
     .carrousel .carousel {
@@ -247,21 +259,26 @@ ul {
     .carousel-item .fotoCar {
         height: 30rem;
     }
-    .logoDuvi{
+
+    .logoDuvi {
         width: 50%;
         margin: auto;
     }
-    div .fotoEquipo{
+
+    div .fotoEquipo {
         height: 300px;
     }
-    .imgTecno{
+
+    .imgTecno {
         width: 80%;
         margin: auto;
     }
-    div .parSomos{
+
+    div .parSomos {
         font-size: 14px;
     }
-    div .fotoCard{
+
+    div .fotoCard {
         height: 300px;
     }
 
@@ -269,7 +286,7 @@ ul {
 
 .fotoFondo {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 .card-title {
@@ -280,7 +297,7 @@ ul {
     color: black;
 }
 
-.botonServicios{
+.botonServicios {
     margin: 50px
 }
 
@@ -293,9 +310,11 @@ ul {
 .foto {
     width: 3rem;
     height: 3rem;
+
     &:hover {
         transform: scale(1.5);
     }
+
     transition-duration: 2s;
 }
 
@@ -305,7 +324,7 @@ footer {
 
 .formulario {
     width: 400px;
-    border: 10px solid #5573b4;
+    border: 10px solid $colorPrincipal;
     padding: 50px;
     margin: auto;
     border-radius: 10px;
@@ -322,7 +341,7 @@ footer {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid  #5573b4;
+    border: 1px solid $colorPrincipal;
     color: black;
     font-weight: 10000;
 }
@@ -330,7 +349,7 @@ footer {
 .boton {
     width: 100%;
     border: 1px solid black;
-    background:#5573b4;
+    background: $colorPrincipal;
     padding: 10px;
     color: white;
     margin: 10px 0;
@@ -349,15 +368,16 @@ footer {
 
 #textSpace {
     border: 1px solid;
-    background-color:#5573b4;
+    background-color: $colorPrincipal;
 
 }
 
 .cardContacto {
-    background-color:  #5573b4;
+    background-color: $colorPrincipal;
     margin: auto;
 }
-.tituloContacto{
+
+.tituloContacto {
     margin-top: 130px;
     margin-bottom: 50px
 }
@@ -365,11 +385,11 @@ footer {
 .textoContacto {
     @include flexbox(flex, column, center, center);
 
-    color:#5573b4;
+    color: $colorPrincipal;
     font-size: 1.2rem;
     position: relative;
     margin: 50px;
-    border-left: 3px solid #5573b4;
+    border-left: 3px solid $colorPrincipal;
 }
 
 .mapa {
@@ -405,9 +425,11 @@ footer {
 
 .logoCocaCola {
     width: 100%;
+
     &:hover {
         transform: scale(1.2);
     }
+
     transition-duration: 2s;
 }
 
@@ -432,9 +454,11 @@ footer {
 
 .fotoCmc {
     width: 100%;
+
     &:hover {
         transform: scale(1.2);
     }
+
     transition-duration: 2s;
 }
 
@@ -506,7 +530,7 @@ footer {
 
 
 // Map get
-$estilosBoton: (color: #5573b4,
+$estilosBoton: (color: $colorPrincipal,
     Cfondo: white,
     Redondeado: 5px,
     Tfuente: 1.2rem,
@@ -529,25 +553,28 @@ $estilosBoton: (color: #5573b4,
 
     &:hover {
         color: white;
-        background-color: #5573b4;
+        background-color: $colorPrincipal;
     }
 }
 
 /*Usamos hover para cambiar el color del boton*/
 
-.container-fluid{
-    background-color: rgba(128, 128, 128, 0.075);
+.container-fluid {
+    background-color: rgba(128, 128, 128, 0.007);
     font-size: 2rem;
+}
+
+.fotoEquipo {
+    height: 40rem;
+
+    &:hover {
+        transform: scale(1.2);
     }
 
-    .fotoEquipo{
-        height: 40rem;
-        &:hover {
-            transform: scale(1.2);
-        }
-        transition-duration: 2s;
-    
-    }
-    .equipo{
-        margin: 30px;
-    }
+    transition-duration: 2s;
+
+}
+
+.equipo {
+    margin: 30px;
+}
