@@ -112,7 +112,47 @@ ul {
   .mapaContacto .mapa {
     height: 20rem; }
   .container-fluid {
-    background-color: white; } }
+    background-color: white; }
+  div .fotoEquipo {
+    height: 300px; }
+  div .parSomos, div .menuSomos {
+    font-size: 14px; }
+  div .fotoCard {
+    height: 300px; } }
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .parrafoDer {
+    border: none; }
+  .logoCoca {
+    flex-direction: column; }
+    .logoCoca .textoCoca {
+      border-left: none; }
+    .logoCoca .logoCocaCola {
+      width: 80%;
+      margin: auto; }
+  .proyecto2 .cmc {
+    flex-direction: column; }
+    .proyecto2 .cmc .textoCmc {
+      border-right: none; }
+    .proyecto2 .cmc .fotoCmc {
+      width: 80%;
+      margin: auto; }
+  .carrousel .carousel {
+    height: 30rem; }
+  .carousel-item .fotoCar {
+    height: 30rem; }
+  .logoDuvi {
+    width: 50%;
+    margin: auto; }
+  div .fotoEquipo {
+    height: 300px; }
+  .imgTecno {
+    width: 80%;
+    margin: auto; }
+  div .parSomos, div .menuSomos {
+    font-size: 14px; }
+  div .fotoCard {
+    height: 300px; } }
 
 .fotoFondo {
   background-color: black;
@@ -136,7 +176,10 @@ ul {
 
 .foto {
   width: 3rem;
-  height: 3rem; }
+  height: 3rem;
+  transition-duration: 2s; }
+  .foto:hover {
+    transform: scale(1.5); }
 
 footer {
   padding: 10px 0px; }
@@ -211,7 +254,8 @@ footer {
   margin-bottom: 50px; }
 
 .parSomos, .menuSomos {
-  margin-top: 150px; }
+  margin-top: 150px;
+  font-size: 1.5rem; }
 
 .inicioProyecto {
   margin-top: 150px;
@@ -228,7 +272,10 @@ footer {
   margin-bottom: 40px; }
 
 .logoCocaCola {
-  width: 100%; }
+  width: 100%;
+  transition-duration: 2s; }
+  .logoCocaCola:hover {
+    transform: scale(1.2); }
 
 .textoCoca {
   font-size: 1.2rem;
@@ -245,7 +292,10 @@ footer {
   border-right: black 2px solid; }
 
 .fotoCmc {
-  width: 100%; }
+  width: 100%;
+  transition-duration: 2s; }
+  .fotoCmc:hover {
+    transform: scale(1.2); }
 
 .redesProyecto {
   margin: 50px; }
@@ -312,5 +362,12 @@ footer {
 .container-fluid {
   background-color: rgba(128, 128, 128, 0.075);
   font-size: 2rem; }
-  .container-fluid a .nav-link {
-    color: white; }
+
+.fotoEquipo {
+  height: 40rem;
+  transition-duration: 2s; }
+  .fotoEquipo:hover {
+    transform: scale(1.2); }
+
+.equipo {
+  margin: 30px; }
